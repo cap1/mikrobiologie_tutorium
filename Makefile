@@ -8,7 +8,6 @@ all: $(PDF) $(GNUPLOT) $(INKSCAPE)
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
-	evince document.pdf
 
 evince:
 	epstopdf ./pictures/*.eps
