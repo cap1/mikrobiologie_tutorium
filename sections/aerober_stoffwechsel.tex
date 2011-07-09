@@ -3,10 +3,44 @@
 \section{Aerober Stoffwechsel}
 \begin{enumerate}
 	\item Warum ist es vorteilhaft, dass die Intermediate der Glykolyse phosphoryliert vorliegen?
+		Phosphorylierte Intermediate koennen nicht durch die Membran transportiert werden und verbleiben somit in der Zelle
 	\item Wie wird die Phosphorylierung des Glycerinaldehyd-3-Phosphats möglich?
-	\item Stellen Sie sich vor, sie sollen in \emph{E. coli} das Gen für die Phosphoglyceratmutase ausschalten. Wäre solch eine Mutante lebensfähig? Begründen Sie Ihre Antwort!
+		Reaktion in zwei Schritte aufgeteilt:
+		Oxidation des Aldehyds zur Karbons\"aure durch NAD+, Vereinigung der Karbons\"aure mit dem Orthophosphat (\"uber Thioester-Zwischenprodukt). Durch die Kopplung wird der zweite, energetisch ung\"unstige, m\"oglich.
+	\item Stellen Sie sich vor, sie sollen in \emph{E. coli} das Gen für die Phosphoglyceratmutase ausschalten. Wäre solch eine Mutante lebensfähig? Begründen Sie Ihre Antwort! 
+		Die Zellen w\"aren Lebensf\"ahig, da Pyruvat zwar nicht mehr ueber die Glycolye, wohl aber noch \"uber den Entner-Duderhoff-Weg gewonnen werden kann 		    (Wenn auch mit schlechterer Ausbeute)
 	\item Was sind die Spezifika des Pentosephosphatweges und des KDPG-Weges?
-	\item Schreiben Sie die Reaktionen der Glykolyse auf, berücksichtigen Sie dabei ATP-Verbrauch und ATP-Bildung sowie die Gewinnung von \ce{NADH2} / \ce{FADH2}!
+		\begin{itemize}
+			\item Pentosephostphatweg: Erzeugt NAPDH und Ribose-5-Phosphat, Unterteilt in Oxidativer Teil (Phosphorylierung von Glucose, erzeugen von 6-Phosphoglucono-$\delta$-Lacton
+			\item KDPG-Weg: Glucose $\Rightarrow$  2NADH + 1 ATP + 2 Pyruvat \"uber KDPG (2-Keto-3-desoxy-6phosphogluconat)
+		\end{itemize}	
+	
+	\item Schreiben Sie die Reaktionen der Glykolyse auf, berücksichtigen Sie dabei ATP-Verbrauch und ATP-Bildung sowie die Gewinnung von \ce{NADH2} / \ce{FADH2}
+		\begin{itemize}
+			\item Glucose + ATP $\rightarrow$ Glucose-6-Phosphat + ADP (Hexokinase)
+			\item Glucose-6-Phosphat $\rightarrow$ Fruktose-6-Phosphat (Glucose-6-Phosphat-Isomerase)
+			\item Fruktose-6-Phosphat + ATP $\rightarrow$ Fruktose-1-6-Phosphat (Phosphofruktokinase) + ADP
+			\item Fruktose-1-6-Phosphat $\rightarrow$ GA-3-P + DHAP (Aldolase)
+			\item DHAP $\Longleftrightarrow$ GA-3-P Triosephosphatisomerase
+			\item GA-3-P + $NAD^+$ $\rightarrow$ 1,3-Bisphosphoglycerat (Glycerinaldehyd-3-P-Dehydrogenase)
+			\item 1,3-Bisphosphoglycerat + ADP $\rightarrow$ ATP + 3-Phosphoglycerat (Phosphoglyceratkinase)
+			\item 3-Phosphoglycerat $\rightarrow$ 2-Phosphoglycerat (Phophoglyceratmutase)
+			\item 2-Phosphoglycerat $\rightarrow$ PEP + $H_20$ (Enolase)
+			\item PEP + ADP $\rightarrow$ Pyruvat + ATP (Pyruvatkinase)
+		\end{itemize}
 	\item Schreiben Sie die Reaktionen des Zitratzyklus auf, berücksichtigen Sie dabei ATP-Verbrauch und ATP-Bildung sowie die Gewinnung von \ce{NADH2} / \ce{FADH2} und die Freisetzung von \ce{CO2}!
+		\begin{itemize}
+			\item Acetyl-Coa + $H_2O$ + Oxalacetat $\rightarrow$ Citrat + CoA-SH (Citrat Synthase)
+			\item Citrat $\rightarrow$ Isocitrat (Aconitase)
+			\item Isocitrat + $NAD^+$ $\rightarrow$ $\alpha$-Ketoglutarat + $CO_2$ + NADH (Isocitrat-Dehydrogenase)
+			\item $\alpha$-Ketoglutarat + $NAD^+$ + CoA-SH $\rightarrow$ Succinyl-Coa + NADH + $CO_2$ ($\alpha$-Ketoglutarat Dehydrogenase-Komplex)
+			\item Succinyl-Coa + GDP $\rightarrow$ GTP + Succinat (Succinyl-CoA Synthethase)
+			\item Succinat + FAD $\rightarrow$ $FADH_2$ + Fumarat  (Succinat-Dehydrogenase)
+			\item Fumarat + $H_2O$ $\rightarrow$ Malat (Fumarase)
+			\item Malat $\rightarrow$ Oxalacetat (Malat-Dehydrogenase)
+		\end{itemize}
+
+
 	\item Warum ist der Zitratzyklus so wichtig für \emph{E. coli}?
+		E.Coli mochte den Zitratzyklus schon immer und hat sich \"uber die Jahre unsterblich in ihn verliebt.
 \end{enumerate}
