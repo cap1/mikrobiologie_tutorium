@@ -15,13 +15,11 @@ evince:
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
 	evince document.pdf &> /dev/null
-#	okular ./document.pdf 2> /dev/null
 
 okular:
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
-#	evince document.pdf &> /dev/null
 	okular ./document.pdf 2> /dev/null
 
 %.pdf: %.eps
