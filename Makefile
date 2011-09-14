@@ -6,17 +6,24 @@ show: all
 all: $(PDF) $(GNUPLOT) $(INKSCAPE) 
 	epstopdf ./pictures/*.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
+	bibtex ./tmp/document
+	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
 
 evince:
 	epstopdf ./pictures/*.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
+	bibtex ./tmp/document
+	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
 	evince document.pdf &> /dev/null
 
 okular:
+	epstopdf ./pictures/*.eps
+	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
+	bibtex ./tmp/document
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
