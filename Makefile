@@ -4,7 +4,8 @@ PDF = $(addsuffix .pdf, $(basename $(wildcard *.eps)))
 show: all
 
 all: $(PDF) $(GNUPLOT) $(INKSCAPE) 
-	epstopdf ./pictures/*.eps
+	epstopdf ./pictures/ecoli_plot.eps
+	epstopdf ./pictures/stoffwechsel.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	bibtex ./tmp/document
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
