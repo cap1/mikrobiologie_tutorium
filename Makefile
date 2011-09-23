@@ -4,7 +4,6 @@ PDF = $(addsuffix .pdf, $(basename $(wildcard *.eps)))
 show: all
 
 all: $(PDF) $(GNUPLOT) $(INKSCAPE) 
-	mkdir tmp
 	epstopdf ./pictures/ecoli_plot.eps
 	epstopdf ./pictures/stoffwechsel.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
