@@ -4,7 +4,9 @@ PDF = $(addsuffix .pdf, $(basename $(wildcard *.eps)))
 show: all
 
 all: $(PDF) $(GNUPLOT) $(INKSCAPE) 
-	epstopdf ./pictures/*.eps
+	mkdir tmp
+	epstopdf ./pictures/ecoli_plot.eps
+	epstopdf ./pictures/stoffwechsel.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	bibtex ./tmp/document
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
@@ -28,6 +30,11 @@ okular:
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	mv ./tmp/document.pdf .
 	okular ./document.pdf 2> /dev/null
+
+schkrippt:
+	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
+	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
+	mv ./tmp/script.pdf .
 
 %.pdf: %.eps
 	epstopdf $(basename $@).eps
