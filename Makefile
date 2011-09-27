@@ -30,7 +30,7 @@ okular:
 	mv ./tmp/document.pdf .
 	okular ./document.pdf 2> /dev/null
 
-schkrippt:
+script:
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
 	mv ./tmp/script.pdf .
