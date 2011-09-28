@@ -31,6 +31,7 @@ okular:
 	okular ./document.pdf 2> /dev/null
 
 script:
+	epstopdf ./pictures/glykolysis_2k.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
 	mv ./tmp/script.pdf .
