@@ -35,6 +35,9 @@ script:
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
 	mv ./tmp/script.pdf .
 
+prepare:
+	mkdir tmp
+
 %.pdf: %.eps
 	epstopdf $(basename $@).eps
 
