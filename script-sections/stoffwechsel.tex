@@ -7,24 +7,24 @@
 		mit \ce{NADH} und \ce{NADPH},
 		welche durch die vorherige Reduktion von \ce{NAD+} bzw. \ce{NADP*} erzeugt wurden.
 \end{description}
-	Bei beiden Photosynthesevarianten finden
-	verschiedener akzessorischer Proteine und Photosystheme verwendung.
-	Dies ermöglich die Anpassung an verschiedene Lebensräume,
-	und die Anpassung an die vorhanden Lichtspektren.
+Bei beiden Photosynthesevarianten finden
+verschiedener akzessorischer Proteine und Photosystheme verwendung.
+Dies ermöglich die Anpassung an verschiedene Lebensräume,
+und die Anpassung an die vorhanden Lichtspektren.
 
 \subsubsection{Oxygenen Photosynthese}
-	\begin{itemize}
-		\item Kein zyklischer Elektronen Transport
-		\item Z-Schema mit zwei Photosysteme, (II:P680;I:P700)
-	\end{itemize}
+\begin{itemize}
+	\item Kein zyklischer Elektronen Transport
+	\item Z-Schema mit zwei Photosysteme, (II:P680;I:P700)
+\end{itemize}
 
 \subsubsection{Anoxygene Photosynthese}
-	\begin{itemize}
-		\item zyklischer Elektronen Transport
-		\item Ein Photosystem (P870)
-		\item umgekehrter, energieverbrauchender Elektronentransport,
-			wenn \ce{NAD(P)H} nötig
-	\end{itemize}
+\begin{itemize}
+	\item zyklischer Elektronen Transport
+	\item Ein Photosystem (P870)
+	\item umgekehrter, energieverbrauchender Elektronentransport,
+		wenn \ce{NAD(P)H} nötig
+\end{itemize}
 
 \subsubsection{\ce{CO2}-Fixierung}
 \begin{description}
@@ -57,7 +57,7 @@
 	\item Ausgangspunk für Fermentation und aerobe Atmung
 	\item Weiter Produkte: Reduktionsäquivalent \ce{NADH+}
 	\item Verbraucht: 2 ATP
-	
+
 \end{itemize}
 
 \begin{enumerate}
@@ -99,8 +99,6 @@ Die Gesamtbilanz lautet:
 	\label{eq:aerobeAtmung}
 \end{equation}
 
-\subsection{Fermentation}
-
 \subsection{Citratzyklus}
 \label{sec:citratzyklus}
 
@@ -111,13 +109,100 @@ Der C\textsubscript{3}-Körper von Pyruvat wird decarboxyliert,
 was zu einem Moleküle \ce{NADH} 
 und einem mit dem Coenzym A gekoppelte Acetylmolekül führt.
 
+Die Acetylgruppe von \textsl{Acetyl-CoA} geht mit der Vier-Kohlenstoff-Verbindung
+\textsl{Oxalacetat} eine Verbindung ein,
+was zur Bildung von \textsl{Citronensäure} führt,
+woebi die Energie aus der Thioesterbindung im \textsl{Acetyl-CoA}
+diese Synthese antreibt.
+Es schließen sich Hydrierungs-, Decarboxylierungs- und Oxidationsreaktionen an
+und zwei zusätzliche \ce{CO2}-Moleküle werden freigesetzt.
+Zuletzt wird wieder \ce{Oxalacetat} gebildet
+und kann seine Funktion als Acetylackezptor wieder übernehmen,
+wodichr der Kreislauf vollendet wird.
+\cite[S. 140]{brock}
+
 \begin{figure}[ht!]
 	\leavevmode
 	\begin{center}
 		\includegraphics[scale=0.30]{./pictures/citratzyklus_1k}
 	\end{center}
-	\caption{\slshape{Der Citrat-Zyklus.}}
+	\caption{Der Citrat-Zyklus.}
 	\label{fig:calvinDetail}
 \end{figure}
 
+Die Zwischenprodukte des Citratzyklus sind auch wichtige Ausgangsstoffe für:
+\begin{itemize}
+	\item $\alpha$-Ketogularat, Oxalacetat \textrightarrow  div. Aminosäuren
+	\item Succinyl-CoA \textrightarrow Porphyriniring der Cytochrome, Chlorophyll
+	\item Oxalacetat \textrightarrow Phosphoenolpyriuvat (PEP)
+	\item Acetyl-CoA \textrightarrow Fettsäurebiosythese
+\end{itemize}
+
+Die Gesamtausbeite beträgt bei Gylkolyse und Citratzyklus 38 ATP.
+Wird ein Glukosemolekül fermentiert (Milchsäure-, oder Alkoholische-Gärung),
+liegt der Energiegewinn bei nur 2 ATP.
+
 Der Citratzyklus wird auch als Tricarbonsäure-Zyklus oder kurz TCA-Zyklus bezeichnet.
+
+\subsection{Chemolithotrophie}
+Neben den hier beschrieben Lebensweisen gibt es auch:
+
+\begin{description}
+	\item[Oxidation reduzierter Schwefelverbindungen] \hfill \\
+		Reduzierte Schwefelverbindungen 
+		und Schwefel sind sehr gute Protonendonnatoren für Chemolitotrophe.
+		Schwefel- und Wasserstoff-Bakterien oxidieren diese Verbindungen
+		und erzeugen damit eine protonenmotorische Kraft.
+		Diese nutzen sie mit ATPasen zur Energiegewinnung.
+		Sie fixieren dabei auch \ce{CO2} über den Calvinzyklus,
+		was sie zu Autotrophen macht.
+
+	\item[Eisenoxidation]	\hfill	\\
+		Eisenbakterien können zweiwertiges Eisen als alleinige Energiequelle nutzen.
+		Sie wachsen meist im Sauren 
+		und sind oft mit Ausflüssen aus Erz- und Kohle-Gruben assoziert.
+		Einiege phototrophe Purpurbakterien können
+		anaerob oxidativ zweiwertiges in dreiwertiges Eisen umwandeln.
+
+\end{description}
+
+\subsubsection{Nitrifizeriung}
+\begin{description}
+	\item[Nitrosifizierer] oxidieren Ammoniak (\ce{NH3}) zu Nitrit (\ce{NO2-})
+	\item[Nitrifizierer] oxidieren Nitrit (\ce{NO2-}) zu Nitrat (\ce{NO3-})
+\end{description}
+
+Bei der Ammoniakoxidation wird letztlich eine protonenmotorische Kraft
+zur Energieerzeugung aufgebaut.
+Dies geschieht über eine Elektronentransportkette.
+Schlüsselenzyme sind hierbei die \emph{Ammoniakmonooxygenase},
+welche Ammoniak zu Hydroxylamin und Wasser oxidiert,
+und die \emph{Hydroxylaminoxidoreductase} die dann Hydroxylamin
+zu Nitrit oxidert.
+Dabei werden vier Elektronen abstrahiert.
+
+Weiterhin gibt es noch dieAnaerobe Ammoniakoxidation (Anammox),
+welche von den Mikroorganismen in einem mit membran bageschlossenen Kompartiment 
+durchgeführt wird,
+dem Anammoxosom.
+Entdeckt wurde dieser Vorgang erst Anfang der 1980er Jahre an \emph{Brocadia anammoxidans}.
+\\
+
+\subsubsection{Wasserstoffoxidation}
+Auch bei der Wasserstoffoxidation wird von den Chemolithotrophen Organismen
+einen protonenmotorische Kraft aufgebaut.
+Durch eine Hydrogenase wird das Wasserstoffgas gespalten
+und die Elektronen in die Elektronentransportkette eingebracht.
+
+\subsection{Anaerobe Lebensweise}
+Neben den hier beschrieben Lebensweisen gibt es auch:
+\begin{description}
+	\item[Acetogenese]
+	\item[Methanogenese]
+\end{description}
+
+\subsubsection{Anaerobe Atmung}
+\subsubsection{Nitratreduktion}
+\subsubsection{Sulfatreduktion}
+
+\subsection{Fermentation}
