@@ -6,6 +6,7 @@ show: all
 all: $(PDF) $(GNUPLOT) $(INKSCAPE) 
 	epstopdf ./pictures/ecoli_plot.eps
 	epstopdf ./pictures/stoffwechsel.eps
+	epstopdf ./pictures/glykolysis_2k.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
 	bibtex ./tmp/document
 	pdflatex --halt-on-error --output-directory=./tmp ./document.tex
@@ -33,6 +34,7 @@ okular:
 script:
 	epstopdf ./pictures/glykolysis_2k.eps
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
+	bibtex ./tmp/script
 	pdflatex --halt-on-error --output-directory=./tmp ./script.tex
 	mv ./tmp/script.pdf .
 
